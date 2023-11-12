@@ -113,7 +113,7 @@ while(loop){
 
 ```
 ## user input pass to function
-- the input result is then pass to input case which pass the int and as per case run different function in `case 11:` return false so that `loop=class_Btcs.input_cases(class_Btcs.take_input());`  loop value become `false` and loop end.
+- the input result is then pass to input case which pass the int and as per case run different function in `case 11:` return false so that [`loop=class_Btcs.input_cases(class_Btcs.take_input());`](https://github.com/Snp-Rj-Ind-code-error-420/record#main)  loop value become `false` and loop end.
 
 
 ```
