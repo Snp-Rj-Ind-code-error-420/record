@@ -427,10 +427,7 @@ public:
 };
 
 int main(){
-	ofstream out;
-	out.open("record.txt");
 	bool loop = true ;
-	int x;
 	student_database class_Btcs;
 	system("cls");
 	while(loop){
