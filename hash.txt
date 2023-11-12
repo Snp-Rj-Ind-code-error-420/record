@@ -1,0 +1,3 @@
+SHA256 hash of D:\c\cpp pen drive\vector\record\student data.cpp:
+6017b88b45d025393125e1c71a729cd2a5d71b0b33b0c34790472a50d2a0aee8
+CertUtil: -hashfile command completed successfully.
