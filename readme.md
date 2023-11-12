@@ -1,10 +1,12 @@
 
-# AJU PROJECT 
+# UNIVERSITY PROJECT (credit:LUMINAR) 
 
-student grade traker program in c++
+-student grade tracker program in c++
+
+> ⚠warning !!! do not copy the program some update are left for specific purpose. use this as refference for your project to understand the working & basic concept of the program. 
 
 ## 📄 Documentation
-### main 
+## main 
 in the main function `int main()` a loop variable `bool loop = true ;` is assigne to make loop `true` from `student_database class_Btcs;` object is created. `system("cls");` clear the screen, then the loop start and from object class_btcs a function is called `class_Btcs.display_menue();` in `class student_database`.
 
 ```
@@ -22,7 +24,6 @@ int main(){
 }
 
 ```
-##
 ## function
 
 - `display_menue()` function display the menue from the vector menue
@@ -507,7 +508,7 @@ while(loop){
 
 ```
 ## tenth function to save file 
-- 
+- `save_data_to_file()` function take the record from the vector and save it to the text file in specific order.
 ```
 
 	void save_data_to_file(){
