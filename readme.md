@@ -248,7 +248,7 @@ private:
 	}
 ```
 ## second function to display record
-- `case 2:` option 2 called function `void display_record()` itrate through threw the vector and display the student in the vector,`void display_record_cout_fun(int i)`i is a function called many time for printing so seperated to call by other function.
+- `case 2:` option 2 called function `void display_record()` itrate through threw the vector and display the student in the vector,`void display_record_cout_fun(int i)` is a function called many time for printing so seperated to call by other function.
 > in case of no data is present in vector outputs `cout<<"no data"<<endl;`
 
 ```
@@ -298,7 +298,7 @@ private:
 	}
 ``` 
 ## fourth function to find top scorer
--  `void topper()` function calculate the topper by eleminating the fail student and calculate the sum total from every subject and finding the max and displaying who got the max score.
+-  `void topper()` function calculate the topper by eleminating the fail student and calculate the sum total from every subject and finding the max and [displaying](https://github.com/Snp-Rj-Ind-code-error-420/record#second-function-to-display-record) who got the max score.
 
 ```
 	void topper(){
@@ -348,7 +348,7 @@ private:
 	}
 ```
 ## sixth function to find subject wise performance
-- `void display_sub_performance()` is a function that take input of subject indentation(1-5) then calculate the 
+- `void display_sub_performance()` is a function that take input of subject indentation(1-5) then calculate the max in subject wise and then print the top scorer[`display_record_cout_fun(indent)`](https://github.com/Snp-Rj-Ind-code-error-420/record#second-function-to-display-record)
 > //flaw id 420
 ```
 
