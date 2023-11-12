@@ -1,8 +1,7 @@
-# Demo 
+# AJU PROJECT 
 
-student record file
+student grade traker program in c++
 
-## Subheader
+## 📄 Documentation
 
-made a basic record holder 
-hola
+-function
