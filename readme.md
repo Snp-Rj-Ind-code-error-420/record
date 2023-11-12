@@ -23,9 +23,9 @@ int main(){
 
 ```
 ##
-#### function
+## function
 
-- display_menue() function display the menue from the vector menue
+- `display_menue()` function display the menue from the vector menue
 
 ```
 #include<iostream>
@@ -75,7 +75,7 @@ public:
 ```
 ##
 
-- after that from the class_Btcs object take.input() is called
+- after that from the class_Btcs object `take.input()` is called
 
 ```
 while(loop){
@@ -85,7 +85,8 @@ while(loop){
 	}
 ```
 ## take user input
-- take input function take input from user for the menue choice range(1-11) in case of invalid input throw throws error use resserection in function to again take input when the input case gets true it return the input to object which calls a function class_btcs.input_case().Here stoi(){refference documentation}function convert string into integer for comparison. 
+- take input function take input from user for the menue choice range(1-11) in case of invalid input throw throws error use resserection in function to again take input when the input case gets true it return the input to object which calls a function `class_btcs.input_case()`.
+> Here `stoi(){refference documentation}`function convert string into integer for comparison. 
 
 
 ```
@@ -226,7 +227,7 @@ private:
 	}
 ```
 ##
-`char pass_elegible(double math,double eng,double sci,double sst,double com)` is a function give output in `char` if a student is `pass or fail (P/F)` and this get push to the vector.
+- `char pass_elegible(double math,double eng,double sci,double sst,double com)` is a function give output in `char` if a student is `pass or fail (P/F)` and this get push to the vector.
 ```
 
 	char pass_elegible(double math,double eng,double sci,double sst,double com){
@@ -248,6 +249,7 @@ private:
 ```
 ## second function to display record
 - `case 2:` option 2 called function `void display_record()` itrate through threw the vector and display the student in the vector,`void display_record_cout_fun(int i)`i is a function called many time for printing so seperated to call by other function.
+> in case of no data is present in vector outputs `cout<<"no data"<<endl;`
 
 ```
 	void display_record_cout_fun(int i){
