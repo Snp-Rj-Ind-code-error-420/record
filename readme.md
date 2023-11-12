@@ -321,13 +321,8 @@ private:
 	}
 ```
 ## fifth function to find a student
-- 
-
+- `void search_student()` function take the name of student and find it throught the vector and then display the student details in case of invalid input it throw `not found`
 ```
-
-
-
-
 	void search_student(){
 		string inp;
 		int indent=0;
@@ -350,6 +345,14 @@ private:
 		cout<<"not found"<<endl;
 		}
 	}
+```
+
+```
+
+
+
+
+
 
 	void display_sub_performance(){
 		string inp;
