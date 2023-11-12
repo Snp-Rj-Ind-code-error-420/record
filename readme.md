@@ -321,7 +321,8 @@ private:
 	}
 ```
 ## fifth function to find a student
-- `void search_student()` function take the name of student and find it throught the vector and then display the student details in case of invalid input it throw `not found`
+- `void search_student()` function take the name of student and find it throught the vector and then display the student details in case of invalid input it throw `not found` 
+> //flaw id 420
 ```
 	void search_student(){
 		string inp;
@@ -346,13 +347,10 @@ private:
 		}
 	}
 ```
-
+## sixth function to find subject wise performance
+- `void display_sub_performance()` is a function that take input of subject indentation(1-5) then calculate the 
+> //flaw id 420
 ```
-
-
-
-
-
 
 	void display_sub_performance(){
 		string inp;
@@ -401,6 +399,14 @@ private:
 			cout<<"***invalid input***"<<endl;
 		}
 	}
+```
+```
+
+
+
+
+
+
 
 	void display_pass(){
 		system("cls");
