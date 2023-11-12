@@ -297,8 +297,8 @@ private:
 		cout << "average of whole class is all subject = " <<avg_cal/student_name.size()<< endl;
 	}
 ``` 
-## third function to find top scorer
--  `void topper()` function calculate the topper by eleminating the fail student and calculate the sum total from every subject and finding the max
+## fourth function to find top scorer
+-  `void topper()` function calculate the topper by eleminating the fail student and calculate the sum total from every subject and finding the max and displaying who got the max score.
 
 ```
 	void topper(){
@@ -320,6 +320,8 @@ private:
 		}
 	}
 ```
+## fifth function to find a student
+- 
 
 ```
 
