@@ -108,7 +108,7 @@ while(loop){
 
 ```
 
-- the input result is then pass to input case which pass the int and as per case run different function in case 11 return false so that `loop=class_Btcs.input_cases(class_Btcs.take_input());`  loob value become fale and loop end.
+- the input result is then pass to input case which pass the int and as per case run different function in `case 11:` return false so that `loop=class_Btcs.input_cases(class_Btcs.take_input());`  loop value become false and loop end.
 
 
 ```
@@ -158,7 +158,9 @@ while(loop){
 
 	}
 ```
-- `void add_student_menue() `
+
+- `void add_student_menue()` function take name student name and there marks and in a array and calls function`void push_to_stack(double math,double eng,double sci,double sst,double com,string name)` marks range(1-100)`if (stod(inp)>-1 && stod(inp)<=100)` if not in range or not double type error is thrown.
+
 
 ```
 
@@ -194,6 +196,29 @@ while(loop){
 		}
 	}
 ```
+- `void push_to_stack(double math,double eng,double sci,double sst,double com,string name)` push data to the vector list in private class
+```
+class student_database{
+private:
+	vector<string> student_name;
+	vector<double> student_sub_math;
+	vector<double> student_sub_english;
+	vector<double> student_sub_science;
+	vector<double> student_sub_sst;
+	vector<double> student_sub_com;
+	vector<char>   student_pass;
+```
+```
+	void push_to_stack(double math,double eng,double sci,double sst,double com,string name){
+		student_name.push_back(name);
+		student_sub_math.push_back(math);
+		student_sub_english.push_back(eng);
+		student_sub_science.push_back(sci);
+		student_sub_sst.push_back(sst);
+		student_sub_com.push_back(com);
+		student_pass.push_back(pass_elegible( math, eng, sci, sst, com));
+	}
+```
 
 ```
 
@@ -214,15 +239,7 @@ while(loop){
 
 	}
 
-	void push_to_stack(double math,double eng,double sci,double sst,double com,string name){
-		student_name.push_back(name);
-		student_sub_math.push_back(math);
-		student_sub_english.push_back(eng);
-		student_sub_science.push_back(sci);
-		student_sub_sst.push_back(sst);
-		student_sub_com.push_back(com);
-		student_pass.push_back(pass_elegible( math, eng, sci, sst, com));
-	}			
+			
 
 
 
