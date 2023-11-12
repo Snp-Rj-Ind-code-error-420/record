@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # AJU PROJECT 
 
 student grade traker program in c++
