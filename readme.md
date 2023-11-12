@@ -273,8 +273,8 @@ private:
 		}
 	}
 ```
-#
-- `void average_grade()` function calculate 
+## third function to calculate the average of whole class
+- `void average_grade()` function calculate avg by taking sum from all the subject vector and divide it by the total number of student by getting size of vector`avg_cal/student_name.size()`
 ```
 	void average_grade(){
 		double avg_cal=0;
@@ -297,30 +297,10 @@ private:
 		cout << "average of whole class is all subject = " <<avg_cal/student_name.size()<< endl;
 	}
 ``` 
+## third function to find topper scorer
+-  
 
 ```
-
-	void average_grade(){
-		double avg_cal=0;
-		for (double i : student_sub_math){
-			avg_cal+=i;
-		}
-		for (double i : student_sub_english){
-			avg_cal+=i;
-		}
-		for (double i : student_sub_science){
-			avg_cal+=i;
-		}
-		for (double i : student_sub_sst){
-			avg_cal+=i;
-		}
-		for (double i : student_sub_com){
-			avg_cal+=i;
-		}
-		system("cls");
-		cout << "average of whole class is all subject = " <<avg_cal/student_name.size()<< endl;
-	}
-
 	void topper(){
 		double total=-1,subject_sum;
 		int indent=0;
@@ -339,6 +319,12 @@ private:
 			display_record_cout_fun(indent);
 		}
 	}
+```
+
+```
+
+
+
 
 	void search_student(){
 		string inp;
