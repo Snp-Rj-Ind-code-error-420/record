@@ -84,7 +84,7 @@ while(loop){
 		
 	}
 ```
-##
+## take user input
 - take input function take input from user for the menue choice range(1-11) in case of invalid input throw throws error use resserection in function to again take input when the input case gets true it return the input to object which calls a function class_btcs.input_case().Here stoi(){refference documentation}function convert string into integer for comparison. 
 
 
@@ -110,7 +110,7 @@ while(loop){
 	}
 
 ```
-##
+## user input pass to function
 - the input result is then pass to input case which pass the int and as per case run different function in `case 11:` return false so that `loop=class_Btcs.input_cases(class_Btcs.take_input());`  loop value become false and loop end.
 
 
@@ -161,8 +161,9 @@ while(loop){
 
 	}
 ```
-##
-- `void add_student_menue()` function take name student name and there marks and in a array and calls function`void push_to_stack(double math,double eng,double sci,double sst,double com,string name)` marks range(1-100)`if (stod(inp)>-1 && stod(inp)<=100)` if not in range or not double type error is thrown.
+## first function add student
+- `void add_student_menue()` function take name student name and there marks and in a array and calls function`void push_to_stack(double math,double eng,double sci,double sst,double com,string name)` marks range(1-100)
+> `if (stod(inp)>-1 && stod(inp)<=100)` if not in range or not double type error is thrown and nothing is added to array.
 
 
 ```
@@ -199,8 +200,8 @@ while(loop){
 		}
 	}
 ```
-
-- `void push_to_stack(double math,double eng,double sci,double sst,double com,string name)` push data to the vector list in private class.
+##
+- `void push_to_stack(double math,double eng,double sci,double sst,double com,string name)` push data to the vector list in private class. 
 
 ```
 class student_database{
@@ -224,7 +225,8 @@ private:
 		student_pass.push_back(pass_elegible( math, eng, sci, sst, com));
 	}
 ```
-
+##
+`char pass_elegible(double math,double eng,double sci,double sst,double com)` is a function give output in `char` if a student is `pass or fail (P/F)` and this get push to the vector.
 ```
 
 	char pass_elegible(double math,double eng,double sci,double sst,double com){
@@ -243,11 +245,11 @@ private:
 		}
 
 	}
+```
+## second function to display record
+- `case 2:` option 2 called function `void display_record()` itrate through threw the vector and display the student in the vector,`void display_record_cout_fun(int i)`i is a function called many time for printing so seperated to call by other function.
 
-			
-
-
-
+```
 	void display_record_cout_fun(int i){
 			cout<<student_name[i]<<"\t\t\t\t||\t  "
 				<<student_sub_math[i]<<"\t\t"
@@ -268,6 +270,33 @@ private:
 			cout<<"no data"<<endl;
 		}
 	}
+```
+#
+- `void average_grade()` function calculate 
+```
+	void average_grade(){
+		double avg_cal=0;
+		for (double i : student_sub_math){
+			avg_cal+=i;
+		}
+		for (double i : student_sub_english){
+			avg_cal+=i;
+		}
+		for (double i : student_sub_science){
+			avg_cal+=i;
+		}
+		for (double i : student_sub_sst){
+			avg_cal+=i;
+		}
+		for (double i : student_sub_com){
+			avg_cal+=i;
+		}
+		system("cls");
+		cout << "average of whole class is all subject = " <<avg_cal/student_name.size()<< endl;
+	}
+``` 
+
+```
 
 	void average_grade(){
 		double avg_cal=0;
