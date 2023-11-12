@@ -202,19 +202,8 @@ while(loop){
 	}
 ```
 ##
-- `void push_to_stack(double math,double eng,double sci,double sst,double com,string name)` push data to the vector list in private class. 
+- `void push_to_stack(double math,double eng,double sci,double sst,double com,string name)` push data to the [vector list in private class](https://github.com/Snp-Rj-Ind-code-error-420/record#function). 
 
-```
-class student_database{
-private:
-	vector<string> student_name;
-	vector<double> student_sub_math;
-	vector<double> student_sub_english;
-	vector<double> student_sub_science;
-	vector<double> student_sub_sst;
-	vector<double> student_sub_com;
-	vector<char>   student_pass;
-```
 ```
 	void push_to_stack(double math,double eng,double sci,double sst,double com,string name){
 		student_name.push_back(name);
@@ -473,7 +462,8 @@ private:
 		}
 	}
 ```
-## nineth function
+## nineth function to delete record
+- `void delete_record()` function takes the student name and use the [`void search_student()`](https://github.com/Snp-Rj-Ind-code-error-420/record#fifth-function-to-find-a-student) same algorithm to find the vector indent and call the function `void delete_record_from_stack(int indent)` which use`vector.erase(begin(vector)+indentation)` function to remove data from the vector.
 ```
 
 	void delete_record_from_stack(int indent){
@@ -516,6 +506,8 @@ private:
 	}
 
 ```
+## tenth function to save file 
+- 
 ```
 
 	void save_data_to_file(){
@@ -541,8 +533,6 @@ private:
 
 
 };
-
-
 
 ```
 
