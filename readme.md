@@ -22,6 +22,7 @@ int main(){
 }
 
 ```
+##
 #### function
 
 - display_menue() function display the menue from the vector menue
@@ -72,6 +73,7 @@ public:
 		cout<<endl;
 	}
 ```
+##
 
 - after that from the class_Btcs object take.input() is called
 
@@ -82,7 +84,7 @@ while(loop){
 		
 	}
 ```
-
+##
 - take input function take input from user for the menue choice range(1-11) in case of invalid input throw throws error use resserection in function to again take input when the input case gets true it return the input to object which calls a function class_btcs.input_case().Here stoi(){refference documentation}function convert string into integer for comparison. 
 
 
@@ -108,7 +110,7 @@ while(loop){
 	}
 
 ```
-
+##
 - the input result is then pass to input case which pass the int and as per case run different function in `case 11:` return false so that `loop=class_Btcs.input_cases(class_Btcs.take_input());`  loop value become false and loop end.
 
 
@@ -159,7 +161,7 @@ while(loop){
 
 	}
 ```
-
+##
 - `void add_student_menue()` function take name student name and there marks and in a array and calls function`void push_to_stack(double math,double eng,double sci,double sst,double com,string name)` marks range(1-100)`if (stod(inp)>-1 && stod(inp)<=100)` if not in range or not double type error is thrown.
 
 
@@ -197,7 +199,9 @@ while(loop){
 		}
 	}
 ```
-- `void push_to_stack(double math,double eng,double sci,double sst,double com,string name)` push data to the vector list in private class
+
+- `void push_to_stack(double math,double eng,double sci,double sst,double com,string name)` push data to the vector list in private class.
+
 ```
 class student_database{
 private:
