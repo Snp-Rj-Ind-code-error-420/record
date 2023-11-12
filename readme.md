@@ -1,8 +1,7 @@
-# Demo 
+# aju assinment 
+create student record 
 
-student record file
 
-## Subheader
+## working 
 
-made a basic record holder 
-hola
+
