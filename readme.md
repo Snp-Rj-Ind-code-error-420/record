@@ -400,13 +400,9 @@ private:
 		}
 	}
 ```
+## seventh function to display student with passing grade
+- `void display_pass()` function display the student with passing marks which is min 30 marks in all subject and if student has below 30 in two subject then student is in fail category.
 ```
-
-
-
-
-
-
 
 	void display_pass(){
 		system("cls");
@@ -416,6 +412,10 @@ private:
 			}
 		}
 	}
+```
+## eight function to update student data
+- `void update_record()` function take the student name and use [`void search_student()`](https://github.com/Snp-Rj-Ind-code-error-420/record#fifth-function-to-find-a-student) similar algorithm to find the student and ask subject marks then call function `void update_to_stack(double math,double eng,double sci,double sst,double com,int indent)` which update the value in the vector.
+```
 
 	void update_to_stack(double math,double eng,double sci,double sst,double com,int indent){
 		student_sub_math[indent]=math;
@@ -472,6 +472,9 @@ private:
 		cout<<"not found"<<endl;
 		}
 	}
+```
+## nineth function
+```
 
 	void delete_record_from_stack(int indent){
 
@@ -511,6 +514,10 @@ private:
 		cout<<"not found"<<endl;
 		}
 	}
+
+```
+```
+
 	void save_data_to_file(){
 		ofstream out;
 		out.open("record.txt");
