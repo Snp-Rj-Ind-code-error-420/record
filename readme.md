@@ -7,6 +7,7 @@
 > do not copy the program some update are left for specific purpose. use this as refference for your project to understand the working & basic concept of the program. 
 
 - [x] work completed
+- [ ] code clean
 - [ ] flaw 420 not resolved 
 
 ## 📄 Documentation
