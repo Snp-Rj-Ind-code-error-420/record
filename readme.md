@@ -2,8 +2,12 @@
 # UNIVERSITY PROJECT (credit:LUMINAR) 
 
 - student grade tracker program in c++
+
 > [!warning]
 > do not copy the program some update are left for specific purpose. use this as refference for your project to understand the working & basic concept of the program. 
+
+- [x] work completed
+- [] flaw 420 not resolved 
 
 ## 📄 Documentation
 ## main 
@@ -312,7 +316,8 @@ while(loop){
 ```
 ## fifth function to find a student
 - `void search_student()` function take the name of student and find it throught the vector and then display the student details in case of invalid input it throw `not found` 
-> //flaw id 420
+> [!note]
+> //flaw id 420 not resolve
 ```
 	void search_student(){
 		string inp;
@@ -339,7 +344,8 @@ while(loop){
 ```
 ## sixth function to find subject wise performance
 - `void display_sub_performance()` is a function that take input of subject indentation(1-5) then calculate the max in subject wise and then print the top scorer[`display_record_cout_fun(indent)`](https://github.com/Snp-Rj-Ind-code-error-420/record#second-function-to-display-record)
-> //flaw id 420
+> [!note]
+> //flaw id 420 not resolve
 ```
 
 	void display_sub_performance(){
