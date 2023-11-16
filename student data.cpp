@@ -276,9 +276,9 @@ public:
 
 	void update_record(){
 		string inp,inp2;
+		bool ignore=false;
 		int indent=0;
 		double marks[5];
-		bool ignore=false;
 		cout << "enter name of the student >>";
 		cin >> inp2;
 		try{
@@ -334,15 +334,13 @@ public:
 
 	void delete_record(){
 		string inp;
-		bool ignore=false;
-		int indent=0;
+		int indent=0,size_org=student_pass.size();
 		cout << "enter name of the student >>";
 		cin >> inp;
 		try{
 			for (string i:student_name){
 				if (i==inp){
 					delete_record_from_stack(indent);
-					ignore=true;
 					system("cls");
 					cout << "record was deleted" << endl;
 					break;
@@ -351,7 +349,7 @@ public:
 				indent++;
 			}
 			
-			if(indent==student_pass.size() && !ignore){
+			if(indent==size_org){
 					throw indent;
 			}
 		}catch(...){
