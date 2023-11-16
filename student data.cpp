@@ -63,6 +63,14 @@ public:
 
 	}
 
+	string inp_name(){
+		string name;
+		cout <<endl<< "enter student name>>";
+		cin.ignore();
+		getline(cin,name);
+		return name;
+	}
+
 	char pass_elegible(double math,double eng,double sci,double sst,double com){
 		double arr[5]={math,eng,sci,sst,com};
 		int cnt=0;
@@ -96,9 +104,8 @@ public:
 		string inp;
 		double marks[5];
 		bool ignore=false;
-
-		cout <<endl<< "enter student name>>";
-		cin >> student_name_input;
+		student_name_input=inp_name();
+		
 		try{
 		for(int i=0;i <5;i++){
 			cout <<endl<< "enter marks of " <<subject[i]<<" >>";
@@ -124,18 +131,22 @@ public:
 	}
 
 	void display_record_cout_fun(int i){
-			cout<<student_name[i]<<"\t\t\t\t||\t  "
-				<<student_sub_math[i]<<"\t\t"
-				<<student_sub_english[i]<<"\t\t"
-				<<student_sub_science[i]<<"\t\t"
-				<<student_sub_sst[i]<<"\t\t\t"
-				<<student_sub_com[i]<<"\t"<<student_pass[i]<<endl;
+		cout.width(40);
+		cout.fill(' ');
+			cout<<student_name[i]<<"\t||\t "
+				<<student_sub_math[i]<<"\t\t "
+				<<student_sub_english[i]<<"\t\t "
+				<<student_sub_science[i]<<"\t\t "
+				<<student_sub_sst[i]<<"\t\t\t "
+				<<student_sub_com[i]<<"\t\t"<<student_pass[i]<<endl;
 	}
 
 	void display_record(){
 		system("cls");
+		cout.width(40);
+		cout.fill(' ');
 		if(!(student_name.size()==0)){
-			cout<<endl<<"student_name"<<"\t\t\t||\t"<<"mathematics\t"<<"english\t\t"<<"science\t\t"<<"social studies\t\t"<<"computer"<<endl;
+			cout<<endl<<"student_name"<<"\t||\t"<<"mathematics\t"<<"english\t\t"<<"science\t\t"<<"social studies\t\t"<<"computer"<<endl;
 			for (int i=0;i<student_name.size();i++){
 				display_record_cout_fun(i);
 			}
@@ -187,8 +198,7 @@ public:
 	void search_student(){
 		string inp;
 		int indent=0;
-		cout << "enter name of the student >>";
-		cin >> inp;
+		inp=inp_name();
 		try{
 			for (string i:student_name){
 				if (i==inp){
@@ -279,8 +289,7 @@ public:
 		bool ignore=false;
 		int indent=0;
 		double marks[5];
-		cout << "enter name of the student >>";
-		cin >> inp2;
+		inp2=inp_name();
 		try{
 			for (string i:student_name){
 				if (i==inp2){
@@ -335,8 +344,7 @@ public:
 	void delete_record(){
 		string inp;
 		int indent=0,size_org=student_pass.size();
-		cout << "enter name of the student >>";
-		cin >> inp;
+		inp=inp_name();
 		try{
 			for (string i:student_name){
 				if (i==inp){
@@ -356,6 +364,7 @@ public:
 		cout<<"not found"<<endl;
 		}
 	}
+	
 	void save_data_to_file(){
 		ofstream out;
 		out.open("record.txt");
