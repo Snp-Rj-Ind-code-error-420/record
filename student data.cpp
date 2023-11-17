@@ -366,16 +366,16 @@ public:
 	}
 
 
-string padding(int input){
-	string str,str2=" ";
-	int k=52-input;
-	for (int i;i<k;i++ ){
-		str+=str2;
+	string padding(int input){
+		string str,str2=" ";
+		int k=52-input;
+		for (int i;i<k;i++ ){
+			str+=str2;
+		}
+		return str;
 	}
-	return str;
-}
 
-void save_data_to_file(){
+	void save_data_to_file(){
 		ofstream out;
 		out.open("record.txt");
 		out.fill(' ');

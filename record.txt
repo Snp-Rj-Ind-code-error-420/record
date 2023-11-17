@@ -1,4 +1,5 @@
 
-student_name			||	mathematics	english		science		social studies		computer
-raja				||	  99		99		20		40			50	P
-kamla				||	  30		40		50		60			45	P
+student_name                                        ||	mathematics	english		science		social studies		computer
+abhishake                                           ||	  99		 99		 99		 99			 99		P
+raja                                                ||	  0		 0		 0		 0			 0		F
+ram                                                 ||	  99		 99		 99		 99			 99		P
