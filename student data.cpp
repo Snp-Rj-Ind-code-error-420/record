@@ -364,30 +364,19 @@ public:
 		cout<<"not found"<<endl;
 		}
 	}
-
-
-	string padding(int input){
-		string str,str2=" ";
-		int k=52-input;
-		for (int i;i<k;i++ ){
-			str+=str2;
-		}
-		return str;
-	}
-
+	
 	void save_data_to_file(){
 		ofstream out;
 		out.open("record.txt");
-		out.fill(' ');
 		if(out.is_open()){
-			out<<endl<<"student_name"<< padding(12) <<"||\t"<<"mathematics\t"<<"english\t\t"<<"science\t\t"<<"social studies\t\t"<<"computer"<<endl;
+			out<<endl<<"student_name"<<"\t\t\t||\t"<<"mathematics\t"<<"english\t\t"<<"science\t\t"<<"social studies\t\t"<<"computer"<<endl;
 			for (int i=0;i<student_name.size();i++){
-				out <<student_name[i]<<padding(student_name[i].size())<<"||\t  "
-				<<student_sub_math[i]<<"\t\t "
-				<<student_sub_english[i]<<"\t\t "
-				<<student_sub_science[i]<<"\t\t "
-				<<student_sub_sst[i]<<"\t\t\t "
-				<<student_sub_com[i]<<"\t\t"<<student_pass[i]<<endl;
+				out <<student_name[i]<<"\t\t\t\t||\t  "
+				<<student_sub_math[i]<<"\t\t"
+				<<student_sub_english[i]<<"\t\t"
+				<<student_sub_science[i]<<"\t\t"
+				<<student_sub_sst[i]<<"\t\t\t"
+				<<student_sub_com[i]<<"\t"<<student_pass[i]<<endl;
 			}
 			system("cls");
 			cout<<"file was saved"<<endl;
@@ -396,47 +385,51 @@ public:
 	}
 
 	bool input_cases(int x){
+		if (x!=1 && x!=11 && student_name.size()==0){
+			system("cls");
+			cout << "empty array" << endl;
 
-		switch (x){
-		case 1:
-			add_student_menue();
-			break;
-		case 2:
-			display_record();
-			break;		
-		case 3:
-			average_grade();
-			break;
-		case 4:
-			topper();
-			break;
-		case 5:
-			search_student();
-			break;
-		case 6:
-			display_sub_performance();
-			break;
-		case 7:
-			display_pass();
-			break;
-		case 8:
-			update_record();
-			break;
-		case 9:
-			delete_record();
-			break;
-		case 10:
-			save_data_to_file();
-			break;
-		case 11:
-			return false; 
-			break;
-		default:
-			cout << "how you reached here i left no bug"<<endl;
-			return true;
-			break;
-		}
-
+		}else{
+			switch (x){
+			case 1:
+				add_student_menue();
+				break;
+			case 2:
+				display_record();
+				break;		
+			case 3:
+				average_grade();
+				break;
+			case 4:
+				topper();
+				break;
+			case 5:
+				search_student();
+				break;
+			case 6:
+				display_sub_performance();
+				break;
+			case 7:
+				display_pass();
+				break;
+			case 8:
+				update_record();
+				break;
+			case 9:
+				delete_record();
+				break;
+			case 10:
+				save_data_to_file();
+				break;
+			case 11:
+				return false; 
+				break;
+			default:
+				cout << "how you reached here i left no bug"<<endl;
+				return true;
+				break;
+			}
+		}	
 		return true;
 
 	}	
