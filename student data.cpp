@@ -118,12 +118,12 @@ public:
 			
 		}
 
-		if(!ignore){
-			//cout << student_name_input<<marks[0]<<marks[1]<<marks[2]<<marks[3]<<marks[4]<<endl;
-			push_to_stack(marks[0],marks[1],marks[2],marks[3],marks[4],student_name_input);
-			system("cls");
-			cout<<"record was added"<<endl;
-		}
+	
+		//cout << student_name_input<<marks[0]<<marks[1]<<marks[2]<<marks[3]<<marks[4]<<endl;
+		push_to_stack(marks[0],marks[1],marks[2],marks[3],marks[4],student_name_input);
+		system("cls");
+		cout<<"record was added"<<endl;
+		
 		}catch (...){
 			system("cls");
 			cout << "***invalid input***"<<endl<<endl;
