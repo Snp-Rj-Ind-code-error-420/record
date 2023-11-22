@@ -1,4 +1,0 @@
-
-student_name			||	mathematics	english		science		social studies		computer
-12				||	  12		12		12		12			12	F
-55				||	  55		55		55		55			55	P
