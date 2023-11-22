@@ -7,6 +7,7 @@
 > do not copy the program some update are left for specific purpose. use this as refference for your project to understand the working & basic concept of the program. 
 
 - [x] work completed
+- [x] ditch efficiency
 - [ ] code clean
 - [ ] flaw 420 not resolved 
 
@@ -34,14 +35,6 @@ int main(){
 - `display_menue()` function display the menue from the vector menue
 
 ```
-#include<iostream>
-
-#include<fstream>
-#include<sstream>
-
-#include<vector>
-
-using namespace std;
 
 //class data 
 class student_database{
