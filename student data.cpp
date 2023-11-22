@@ -145,14 +145,11 @@ public:
 		system("cls");
 		cout.width(40);
 		cout.fill(' ');
-		if(!(student_name.size()==0)){
-			cout<<endl<<"student_name"<<"\t||\t"<<"mathematics\t"<<"english\t\t"<<"science\t\t"<<"social studies\t\t"<<"computer"<<endl;
-			for (int i=0;i<student_name.size();i++){
-				display_record_cout_fun(i);
-			}
-		}else{
-			cout<<"no data"<<endl;
+		cout<<endl<<"student_name"<<"\t||\t"<<"mathematics\t"<<"english\t\t"<<"science\t\t"<<"social studies\t\t"<<"computer"<<endl;
+		for (int i=0;i<student_name.size();i++){
+			display_record_cout_fun(i);
 		}
+	
 	}
 
 	void average_grade(){

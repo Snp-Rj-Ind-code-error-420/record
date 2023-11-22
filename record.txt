@@ -1,5 +1,4 @@
 
-student_name                                        ||	mathematics	english		science		social studies		computer
-abhishake                                           ||	  99		 99		 99		 99			 99		P
-raja                                                ||	  0		 0		 0		 0			 0		F
-ram                                                 ||	  99		 99		 99		 99			 99		P
+student_name			||	mathematics	english		science		social studies		computer
+12				||	  12		12		12		12			12	F
+55				||	  55		55		55		55			55	P
