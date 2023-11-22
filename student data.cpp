@@ -282,15 +282,12 @@ public:
 
 	void update_record(){
 		string inp,inp2;
-		bool ignore=false;
 		int indent=0;
 		double marks[5];
 		inp2=inp_name();
 		try{
 			for (string i:student_name){
 				if (i==inp2){
-
-					try{
 					for(int i=0;i <5;i++){
 						cout <<endl<< "enter marks of " <<subject[i]<<" >>";
 						cin >> inp;
@@ -302,16 +299,13 @@ public:
 						
 					}
 
-					if(!ignore){
-						update_to_stack(marks[0],marks[1],marks[2],marks[3],marks[4],indent);
-						system("cls");
-						cout<<"record was updated"<<endl;
-					}
-					}catch (...){
-						system("cls");
-						cout << "***invalid input***"<<endl<<endl;
-					}
-						break;
+					
+					update_to_stack(marks[0],marks[1],marks[2],marks[3],marks[4],indent);
+					system("cls");
+					cout<<"record was updated"<<endl;
+					
+
+					break;
 				}
 				
 				indent++;
@@ -321,7 +315,8 @@ public:
 					throw indent;
 				}
 		}catch(...){
-		cout<<"not found"<<endl;
+			system("cls");
+			cout<<"not found / invalid input"<<endl;
 		}
 	}
 
