@@ -298,7 +298,6 @@ public:
 						}	
 						
 					}
-
 					
 					update_to_stack(marks[0],marks[1],marks[2],marks[3],marks[4],indent);
 					system("cls");
