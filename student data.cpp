@@ -103,7 +103,6 @@ public:
 		string student_name_input;
 		string inp;
 		double marks[5];
-		bool ignore=false;
 		student_name_input=inp_name();
 		
 		try{
