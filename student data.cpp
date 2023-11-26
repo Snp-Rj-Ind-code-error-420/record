@@ -355,13 +355,22 @@ public:
 		}
 	}
 	
+	string padding(int input){
+		string str,str2=" ";
+		int k=52-input;
+		for (int i;i<k;i++ ){
+			str+=str2;
+		}
+		return str;
+	}
+	
 	void save_data_to_file(){
 		ofstream out;
 		out.open("record.txt");
 		if(out.is_open()){
-			out<<endl<<"student_name"<<"\t\t\t||\t"<<"mathematics\t"<<"english\t\t"<<"science\t\t"<<"social studies\t\t"<<"computer"<<endl;
+			out<<endl<<"student_name"<< padding(12) <<"||\t"<<"mathematics\t"<<"english\t\t"<<"science\t\t"<<"social studies\t\t"<<"computer"<<endl;
 			for (int i=0;i<student_name.size();i++){
-				out <<student_name[i]<<"\t\t\t\t||\t  "
+				out <<student_name[i]<< padding(student_name[i].size()) <<"||\t  "
 				<<student_sub_math[i]<<"\t\t"
 				<<student_sub_english[i]<<"\t\t"
 				<<student_sub_science[i]<<"\t\t"
